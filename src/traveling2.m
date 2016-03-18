@@ -5,6 +5,10 @@ function [Tdist,town]=traveling2(x,y,D)
 % that starts at one of the towns, goes once through everyone of the others 
 % and returns to the first one
 
+% traveling2.m usa a funcao rand do Matlab (que gera numeros pseudo-aleatorios com distribuicao uniforme entre 0 e 1) 
+% Para obter uma rota inicial e inicia um processo de busca alterando localmente cada rota e aceitando a nova rota se o comprimento desta for inferior ao da rota anterior. 
+% Este processo de optimizacao e levado a cabo sobre uma matriz (simetrica) de distancias entre as diferentes cidades;
+
 n=length(x);
 % FIRST tentative route 
 town=randperm(n); % a random permutation of the first n integers 

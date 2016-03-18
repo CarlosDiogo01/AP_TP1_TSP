@@ -5,6 +5,9 @@ function [Tdist,town]=traveling(x,y,D)
 % that starts at one of the towns, goes once through everyone of the others 
 % and returns to the first one
 
+%traveling e uma modificacao do codigo anterior que implementa o metodo de simulated annealing.
+%Tal como explicado na aula, para resolver o mesmo problema;
+
 n=length(x);
 % FIRST tentative route 
 town=randperm(n); % a random permutation of the first n integers 
