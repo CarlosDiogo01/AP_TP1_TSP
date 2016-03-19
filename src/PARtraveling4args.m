@@ -1,4 +1,4 @@
-function PARtraveling(n,procs,x,y)
+function PARtraveling4args(n,procs,x,y)
 
 % This is a simulation of a parallel execution on P processors of the code
 % traveling which uses simulated annealing to find the shortest route to go
